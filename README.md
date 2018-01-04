@@ -13,7 +13,7 @@ Starte nun Tomcat:
 
     mvn tomcat7:run
     
-Du kannst nun die Applikation unter folgender URL aufrufen: http://localhost:8080/Spring-mvc-web/app/hello
+Du kannst nun die Applikation unter folgender URL aufrufen: http://localhost:8080/spring-mvc-web/app/hello
 
 ## Spring-Konfiguration
 
@@ -26,18 +26,21 @@ Inspiziere die Spring-Konfigurationen
 
 Lies den folgenden Abschnitt über Requestparameter: https://docs.spring.io/spring/docs/5.0.2.RELEASE/spring-framework-reference/web.html#mvc-ann-requestparam.
 
-Erweitere `HelloController` um eine neue Methode `greet`, welche im Vergleich zur Methode `hello` 
-einen zusätzlichen Parameter `name` hat. 
+Erweitere `HelloController` um eine neue Methode `helloWithParam`, welche beim Aufruf der URL
+http://localhost:8080/spring-mvc-web/app/hello?name=Bob mit einer HTML-Seite mit Grüssen an Bob antwortet.
 
-Schau Dir das Freemarker-Template `src/main/webapp/WEB-INF/views/hello.html` an. 
-Das Model `model` soll nun so mit dem neuen Parameter befüllt werden, dass dieser über das Freemarker-Template ausgegeben wird.
+Schau Dir dazu das Freemarker-Template `src/main/webapp/WEB-INF/views/hello.html` an. 
+In der neuen Methode `helloWithParam` muss das Model `model` nun mit dem neuen Parameter befüllt werden, 
+so dass dieser über das bestehende Freemarker-Template ausgegeben wird.
+
+Teste den neuen Service mit http://localhost:8080/spring-mvc-web/app/hello?name=Bob.
 
 ## RESTful Service
 
 Lies im Guide zu RESTful Web Services mit Spring Boot die beiden Abschnitte "Create a resource representation class" und "Create a resource controller".
 Den Guide findest Du hier: http://spring.io/guides/gs/rest-service/.
 
-Erzeuge eine Resource `Greeting` und einen neuen Controller `GreetingController` wie im Guide beschrieben, 
+Erzeuge wie im Guide beschrieben eine Resource `Greeting` und einen neuen Controller `GreetingController`, 
 allerdings im Package `ch.juventus.example.web`.
 
 Teste den neuen Service mit: http://localhost:8080/spring-mvc-web/app/greeting?name=Bob
