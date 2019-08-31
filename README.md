@@ -26,7 +26,7 @@ Inspiziere die Spring-Konfigurationen
 
 Lies den folgenden Abschnitt über Requestparameter: https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc-ann-requestparam.
 
-Erweitere `HelloController` um eine neue Methode `helloWithParam`, welche beim Aufruf der URL
+Erweitere im `HelloController` die Methode `hello`, sodass sie beim Aufruf der URL
 http://localhost:8080/spring-mvc-web/app/hello?name=Bob mit einer HTML-Seite mit Grüssen an Bob antwortet.
 
 Schau Dir dazu das Freemarker-Template `src/main/webapp/WEB-INF/views/hello.html` an. 
