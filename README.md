@@ -34,15 +34,3 @@ In der neuen Methode `helloWithParam` muss das Model `model` nun mit dem neuen P
 so dass dieser über das bestehende Freemarker-Template ausgegeben wird.
 
 Teste den neuen Service mit http://localhost:8080/spring-mvc-web/app/hello?name=Bob.
-
-## RESTful Service
-
-Lies im Guide zu RESTful Web Services mit Spring Boot die beiden Abschnitte "Create a resource representation class" und "Create a resource controller".
-Den Guide findest Du hier: http://spring.io/guides/gs/rest-service/.
-
-Erzeuge wie im Guide beschrieben eine Resource `Greeting` und einen neuen Controller `GreetingController`, 
-allerdings im Package `ch.juventus.example.web`.
-
-Teste den neuen Service mit: http://localhost:8080/spring-mvc-web/app/greeting?name=Bob
-
-Der Service wird eine Exception erzeugen. Kannst Du den Fehler finden und korrigieren?
