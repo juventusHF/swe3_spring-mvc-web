@@ -12,7 +12,7 @@ import org.springframework.web.servlet.view.json.MappingJackson2JsonView;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackageClasses = WebConfiguration.class)
+@ComponentScan
 public class WebConfiguration implements WebMvcConfigurer {
 
     @Override

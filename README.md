@@ -24,7 +24,7 @@ Inspiziere die Spring-Konfigurationen
 
 ## GET Parameter 
 
-Lies den folgenden Abschnitt über Requestparameter: https://docs.spring.io/spring/docs/5.0.2.RELEASE/spring-framework-reference/web.html#mvc-ann-requestparam.
+Lies den folgenden Abschnitt über Requestparameter: https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html#mvc-ann-requestparam.
 
 Erweitere `HelloController` um eine neue Methode `helloWithParam`, welche beim Aufruf der URL
 http://localhost:8080/spring-mvc-web/app/hello?name=Bob mit einer HTML-Seite mit Grüssen an Bob antwortet.
